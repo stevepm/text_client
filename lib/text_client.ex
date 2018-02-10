@@ -1,18 +1,5 @@
 defmodule TextClient do
-  @moduledoc """
-  Documentation for TextClient.
-  """
+  alias TextClient.Interact
 
-  @doc """
-  Hello world.
-
-  ## Examples
-
-      iex> TextClient.hello
-      :world
-
-  """
-  def hello do
-    :world
-  end
+  defdelegate start(), to: Interact
 end
